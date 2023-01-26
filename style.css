@@ -59,6 +59,7 @@ a {
 
 .header-main-nav ul li a:hover{
     color: #c13584;
+    transition: 1s;
 }
 
 .header-main-sm {
@@ -77,6 +78,11 @@ a {
     background-image: url(/images/facbook.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.header-main-sm a:hover{
+    transition: 1s;
+    box-shadow: 0 2rem 3rem black;
 }
 
 .header-main-sm-em {
@@ -118,6 +124,104 @@ a {
     margin-right: 5px;
     border-radius: 15px;
     height: 150px;
+}
+
+.mtt {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+/* Therapist view on Meet the Team */
+.therapist{
+    margin-top: 25px;
+    display: flex;
+    min-width: 75%;
+}
+
+.therapist img{
+    display: flex;
+    padding: 5px;
+    margin-left: 350px;
+    height: 600px;
+    width: 1000px;
+}
+
+.therapist .about-view{
+    display: block;
+    background-color: white;
+    border-radius: 25%;
+    border-style:ridge;
+    border-color: black;
+    box-shadow: 1rem 2rem 3rem lightgray;
+    margin-left: 15px;
+    margin-right: 50px;
+    text-align: center;
+    padding: 5px 125px;
+    align-items: right;
+    min-width: 300px;
+}
+
+.about-view p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+/* Administration view on Meet the Team */
+
+.admin{
+    margin-top: 25px;
+    display: flex;
+}
+
+.admin img{
+    padding: 5px;
+    margin-right: 25%;
+    height: 600px;
+    width: 600px;
+}
+
+.admin .about-view{
+    background-color: white;
+    border-radius: 25%;
+    border-style:ridge;
+    border-color: black;
+    box-shadow: 1rem 2rem 3rem lightgray;
+    margin-left: 15px;
+    margin-right: 50px;
+    text-align: center;
+    padding: 5px 125px;
+    align-items: right;
+}
+
+/* Therapist Assistant view on Meet the Team */
+
+.ta{
+    margin-top: 25px;
+    display: flex;
+}
+
+.ta img{
+    display: flex;
+    padding: 5px;
+    margin-left: 25%;
+    height: 600px;
+    width: 1000px;
+}
+
+.ta .about-view{
+    display: block;
+    background-color: white;
+    border-radius: 25%;
+    border-style:ridge;
+    border-color: black;
+    box-shadow: 1rem 2rem 3rem lightgray;
+    margin-left: 15px;
+    margin-right: 50px;
+    text-align: center;
+    padding: 5px 125px;
+    align-items: right;
 }
 /* Phones */
 
