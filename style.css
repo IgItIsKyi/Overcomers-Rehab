@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color:  grey;
 }
 
 .header-main {
@@ -92,14 +92,32 @@ a {
     text-align: center;
 }
 
-.border-for-us {
-    margin-top: 50px;
-    align-self: center;
+.border-for-home {
+    padding: 20px;
+    margin: 30px 50px 15px;
+    background-color: grey;
+    border-width: 30px;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.5px;
+    border-radius: 20px;
+    box-shadow: 0 2rem 3rem lightgray;
 }
 
 .info{
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.pay-imgs {
+    align-items: center;
+}
+
+.pay-imgs img{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+    height: 150px;
 }
 /* Phones */
 
