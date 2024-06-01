@@ -8,6 +8,7 @@
     </head>
 
     <body>
+        <!--   Start of Menu wrapper --->
         <div class="menu-wrapper">
             <header class="header-main">
             <!------- Logo In the Menu ------------>
@@ -18,27 +19,29 @@
                 <nav class="header-main-nav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="locations.html">Contact and Locations</a></li>
                         <li><a href="team.html">Meet the Team</a></li>
+                    <div class="header-main-sm">
+                        <!------Facbook Link ------>
+                        <a href="https://www.facebook.com/overcomersrehabandphysicaltherapy"><div class="header-main-sm-fb"></div></a>
+                        <!------Email Link ------>                    
+                        <a href=mailto:"Overcomersrehab@gmail.com"><div class="header-main-sm-em"></div></a>
+                    </div>
+
                     </ul>
                 </nav>
             <!------- Social Media Links ----------->    
-                <div class="header-main-sm">
-                    <!------Facbook Link ------>
-                    <a href="https://www.facebook.com/overcomersrehabandphysicaltherapy"><div class="header-main-sm-fb"></div></a>
-                    <!------Email Link ------>                    
-                    <a href=mailto:"Overcomersrehab@gmail.com"><div class="header-main-sm-em"></div></a>
-                    
-                </div>
+
             </header>
         </div>
-        <div class="overview">
-            <h1>Empowering Lives to Achieve Greater Functional Independence
-                Despite Physical Limitations
-            </h1>
-            <div class="border-for-home">
-                <h2 class="info">About Us</h2>
-                    <p class="info">Here at OverComers Rehab and Physical Therapy, we provide physical and
+        <!--- End of Menu Wrapper -->
+
+        <!-- Start of main body-->
+        <div>
+            <!-- Start of Summary Section  -->
+            <div class="border-for-smmry">
+                <div class="smmry-info">
+                    <h2 class="smmry-heading"><center>About Us</center></h2>
+                    <p class="smmry-txt-info">Here at OverComers Rehab and Physical Therapy, we provide physical and
                         manual therapy services. Manual Therapy is a hands-on approach of treatment
                         that focuses on tissue specific treatments to facilitate proper stimulations
                         for regeneration or healing of various tissues; whether it be under performing
@@ -47,33 +50,39 @@
                         muscle stretching, passive movements and dosed excercises using current research
                         and specific dosing techniques using the Holten Curve to regain movement and 
                         improve muscle activation.
-
                     </p>
-                    <p class="info">
-                        Soft tissue techniques can be applied based on thier specific needs of said tissue,
-                        including range of motion and compensatory movements. We also provide continual 
-                        reassements as the treatment progreses so that we may best match the needs of each
-                        patient. 
-                    </p>
-           </div>
-           <div class="border-for-home">
-                <h2 class="info">Accepted Insurances</h2>
-                    <h3>Administrative Concepts | AMA | American Specialty | Health Network One
-                        Blue Cross | Blue Shield (out of network only) | Cigna AV | 
-                        CMS MMA Specialty | Geico Auto | Health First Health Plans (out of network only) |
-                        Florida Medicare | Medrisk | One Call Physical Therapy | Orchid | Simply Healthcare |
-                        Staywell Therapy Direct Network Workers Compensation | Tricare East and Tricare for Life AV |
-                        United Healthcare of Florida | USAA | Wellcare
-                    </h3>
-            </div>
-            <div class="border-for-home">                    
-                <h2 class="info">Accepted Payments</h2>
-                <div class="pay-imgs">
-                    <img src="/images/visa.png" alt="Visa">
-                    <img src="/images/amerexp.png" alt="American Express">
-                    <img src="/images/discover.png" alt="Discover">
-                    <img src="/images/mastercard.png" alt="Mastercard">
                 </div>
+            </div>
+            <!-- End of Summary Section  -->
+            <!-- Start of Promotion/Barrier Line -->
+            <div class="promotion-barrier-line">
+                <h1>Consultations only $50!</h1>
+                <h1>Out of Pocket visits only $50!</h1>
+            </div>
+            <div class="border-for-reachout">
+                <h2 class="reachout-hding">Questions? Contact us!</h2>
+                <p>
+                    Fill out your information in the form and we will get back toi you as soon as we can! Or give us a call! <br> <a href="tel:+321-757-0626">321-757-0626</a>
+                </p>
+                <form action="POST">
+                    <div class="label-text">
+                        <label for="">First Name</label>
+                        <input type="text" name="ffname" id="form-first-name">
+                    </div>
+                    <div class="label-text">
+                        <label for="">Last Name</label>
+                        <input type="text" name="flname" id="form-last-name">
+                    </div>
+                    <div class="label-text">
+                        <label for="">Email</label>
+                        <input type="email" name="femail" id="form-email" placeholder="heres@exmaple.com">
+                    </div>
+                    <div class="label-text">
+                        <label for="">Message</label>
+                        <textarea name="fmsg" id="msg-overview"></textarea>
+                    </div>
+                    <button class="form-submit-btn">Send</button>                    
+                </form>
             </div>
         </div>
     </body>

@@ -3,9 +3,7 @@
     padding: 0;
 }
 
-body {
-    background-color:  grey;
-}
+
 
 .header-main {
     width: 100%;
@@ -98,6 +96,47 @@ a {
     text-align: center;
 }
 
+.border-for-smmry {
+    background-image: url(/images/smmry.jpg);
+    background-position-y: -600px;
+    background-size: contain;
+    background: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.smmry-info {
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-right: 50%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    color: white;
+	-webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 0px 1px 4px #23430C;
+}
+
+.smmry-heading {
+    margin-top: 0px;
+}
+
+.smmry-txt-info {
+    margin-top: 0px;
+    display: flex;
+}
+
 .border-for-home {
     padding: 20px;
     margin: 30px 50px 15px;
@@ -110,28 +149,36 @@ a {
     box-shadow: 0 2rem 3rem lightgray;
 }
 
-.info{
-    margin-top: 10px;
-    margin-bottom: 20px;
+.promotion-barrier-line{ 
+    margin-top: 0px;
+    justify-content: space-between;
+    background-color: black;
+    color: orange;
+    display: flex;
 }
 
-.pay-imgs {
-    align-items: center;
+.promotion-barrier-line h1 {
+    margin-top: 0px;
+    padding: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
-.pay-imgs img{
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 15px;
-    height: 150px;
+.border-for-reachout {
+    background-image: url(/images/reach-out.jpg);
+    background-position-y: -600px;
+    background-size: contain;
+    background: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.mtt {
-    text-align: center;
-    margin-top: 50px;
-
-}
-
+/* Start of Meet the Team Page*/
 
 /* Therapist view on Meet the Team */
 .therapist{
@@ -223,6 +270,8 @@ a {
     padding: 5px 125px;
     align-items: right;
 }
+
+/* End of Meet the team Page */
 /* Phones */
 
 @media only screen and (min-width: 360px) {
