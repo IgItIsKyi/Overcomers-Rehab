@@ -66,7 +66,7 @@
                         Fill out your information in the form and we will get back to you as soon as we can! Or give us a call! <br> <a href="tel:+321-757-0626">321-757-0626</a>
                     </p>
                 </div>
-                <form onsubmit="sendEmail()" class="reachout-form">
+                <form class="reachout-form" onsubmit="sendEmail()">
                     <div class="form-name-input">
                         <div class="label-fname">
                             <label for=""><em>First Name</em></label>
@@ -90,28 +90,37 @@
                         <label for="label-msg"><em>Message</em></label>
                         <textarea name="fmsg" id="msg-overview"></textarea required>
                     </div>
-                    <button class="form-submit-btn">Send</button>                    
+                    <button type="submit" class="form-submit-btn">Send</button>                    
                 </form>
             </div>
         </div>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script>
             function sendEmail() {
+                console.log("Send Email function is running.")
                 var email = document.getElementById('form-email').value;
+                var phone = document.getElementById('form-number').value;
                 var name = document.getElementById('form-first-name').value;
                 var msg = document.getElementById('msg-overview').value;
 
+                console.log("The email is: " + email)
+                console.log("This is the message: " + msg)
                 Email.send({
                     Host : "smtp.gmail.com",
-                    Username : "rpa.kchandler",
+                    Username : "rpa.kchandler@gmail.com",
                     Password : "Ky!em!sT3sT!ng",
-                    To : "overcomersrehab.com",
+                    To : 'rpa.kchandler@gmail.com',
                     From : email,
-                    Subject : "Customer " + name + " Reach From Website",
-                    Body : msg
+                    Subject : "Customer named " + name + " Reaching out From Website",
+                    Body : "Email: " + email
+                            + "<br>Phone Number: " + phone 
+                            + "<br>" + msg
                 }).then(
+                
                 message => alert(message)
+
                 );
+                console.log("Email should be sent.")
             }
         </script>
 
