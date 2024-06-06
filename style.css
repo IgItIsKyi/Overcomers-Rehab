@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+ul li{
+    list-style-type: none;
+}
+
 .menu-wrapper {
     width: 100%;
 }
@@ -12,17 +16,13 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    margin-right: 100px;
 }
 
 a { 
     cursor: pointer;
 }
 
-.mobile-menu-toggle {
-    display: none; /* Hide on larger screens */
-    cursor: pointer;
-}
 
 .mobile-menu-toggle span {
     display: block;
@@ -79,8 +79,7 @@ a {
 
 
 
-.header-main-nav ul li a{
-    text-decoration: none;
+.header-main-nav ul li a{  
     padding: 0 20px;
     color: black;
     font-size: 16px;
@@ -98,7 +97,6 @@ a {
     background-color: #fff;
     width: fit-content;
     height: 100%;
-    padding-right: 60px;
     display: flex;
     align-items: center;
     column-gap: 10px;
@@ -298,7 +296,7 @@ a {
 .form-submit-btn {
     outline: solid 2px black;
     padding: 5px 150px;
-    background-color: gray;
+    background-color: #373B4D;
     margin-top: 15px;
     margin-right: 0px;
     margin-left: 0px;
@@ -306,7 +304,6 @@ a {
 /* Start of Footer */
 footer {
     width: 100%;
-    outline: solid 3px black;
     display: flex;
     justify-content: space-between;
 }
@@ -325,34 +322,47 @@ a {
 
 /* Start of Meet the Team Page*/
 
+.team-background {
+    background-image: url(images/team-background.jpeg);
+    background-size: cover;
+    outline: solid 2px black;
+}
+
+.mtt h1{
+    margin-top: 5px;
+}
 /* Therapist view on Meet the Team */
 .therapist{
-    margin-top: 25px;
+    justify-content: center;
     display: flex;
-    min-width: 75%;
+    width: 100%;
 }
+
+.title {
+    color: gray;
+    opacity: 0.5;
+}
+
+.circular--portrait {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
 
 .therapist img{
-    display: flex;
-    padding: 5px;
-    margin-left: 350px;
-    height: 600px;
-    width: 1000px;
+    width: 100%;
+    height: auto;
 }
 
-.therapist .about-view{
-    display: block;
-    background-color: white;
-    border-radius: 25%;
-    border-style:ridge;
-    border-color: black;
-    box-shadow: 1rem 2rem 3rem lightgray;
-    margin-left: 15px;
+ .about-view{
+    display: inline;
+    margin-left: 20px;
     margin-right: 50px;
     text-align: center;
-    padding: 5px 125px;
+    padding: 5px 75px;
     align-items: right;
     min-width: 300px;
+    max-width: 50%;
 }
 
 .about-view p{
@@ -362,29 +372,22 @@ a {
 
 /* Administration view on Meet the Team */
 
-.admin{
+.admin {
     margin-top: 25px;
+    justify-content: center;
     display: flex;
+    width: 100%;
+}
+
+.admin .about-view {
+    align-self: center;
+    margin-right: 15px;
+    margin-left: 50px;
 }
 
 .admin img{
-    padding: 5px;
-    margin-right: 25%;
-    height: 600px;
-    width: 600px;
-}
-
-.admin .about-view{
-    background-color: white;
-    border-radius: 25%;
-    border-style:ridge;
-    border-color: black;
-    box-shadow: 1rem 2rem 3rem lightgray;
-    margin-left: 15px;
-    margin-right: 50px;
-    text-align: center;
-    padding: 5px 125px;
-    align-items: right;
+    height: auto;
+    width: 100%;
 }
 
 /* Therapist Assistant view on Meet the Team */
@@ -417,7 +420,9 @@ a {
 }
 
 /* End of Meet the team Page */
-/* Phones */
+
+
+/* Phones and Tablets */
 
 @media screen and (max-width: 768px) {
     .menu-wrapper {
@@ -425,7 +430,7 @@ a {
         width: 100%;
     }
     .header-main {
-        display: flex;
+        display: inline-flex;
         justify-content: space-between;
         align-items: center;
     }
@@ -447,11 +452,11 @@ a {
     
     .mobile-menu {
         position: inherit;
-        display: inline-block;
+        display: inline;
     }
 
     .mobile-menu img {
-        height: 100px;
+        height: 50px;
     }
 
     .dropdown-content {
@@ -462,17 +467,20 @@ a {
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         right: 0px;
+        text-decoration: none;
       }
 
       .dropdown-content a:hover {
         z-index: 10;
         background-color: #ddd;
+        text-decoration: none;
 
     }
 
       .mobile-menu:hover .dropdown-content {
         z-index: 20;
         display: block;
+        text-decoration: none;
     }
 
 
@@ -513,7 +521,29 @@ a {
         font-size: 20px;
     }
 
+    .therapist {
+        display: inline;
+    }
+
+    .admin {
+        display: inline;
+    }
+
+    .header-main-sm {
+        padding-right: 0px;
+    }
+
+    .header-main {
+        padding: 0px;
+    }
+
+    header {
+        display: inline-block;
+    }
+
+
     footer {
+        width: 100%;
         font-size: 12px;
     }
     
